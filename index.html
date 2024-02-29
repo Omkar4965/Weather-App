@@ -8,84 +8,94 @@
 </head>
 <body>
 
-    <div class="wrapper">
-        <h1></h1>
+    <div class="wrapper nobg">
+        <div class="smallWrapper nobg">
+        <h1 class="nobg">WEATHER APP</h1>
 
-        <div class="tab-container">
-            <div class="tab" data-userweather>Your Weather</div>
-            <div class="tab" data-searchweather>Search Weather</div>
+        <div class="tab-container nobg">
+            <div class="tab pointer nobg" data-userweather>Your Weather</div>
+            <div class="tab pointer nobg" data-searchweather>Search Weather</div>
         </div>
 
-        <div class="weather-container">
+        <div class="weather-container nobg">
 
             <!-- grant location -->
-            <div class="grant-location-container">
-                <img src="images/location.png" width="80" height="80" loading="lazy" alt="">
-                <h1>Grant Location Access</h1>
-                <p>Allow access to get weather information</p>
-                <button class="btn">Grant Access</button>
+            <div class="grant-location-container nobg">
+                <img src="images/location.png" class="nobg" width="80" height="80" loading="lazy" alt="">
+                <h1 class="nobg">Grant Location Access</h1>
+                <h2 class="nobg">Allow access to get weather information</h2>
+                <button class="btn1 pointer nobg">Grant Access</button>
             </div>
 
             <!-- Search form -->
-            <form class="form-container" data-searchForm>
-                <input type="text" placeholder="Search for city...." data-searchInput>
-                <button class="btn">
-                    <img src="images/search.png" width="20" height="20" loading="lazy" alt="">
+            <div class="search-form nobg unactive"></div>
+                <input type="text" placeholder="Search for city...." onclick="this.select()" class="unactive inputCity" data-searchInput>
+                <button class="btn2 pointer unactive " data-searchBtn>
+                    <img src="images/search.png" class="nobg" width="20" height="20" loading="lazy" alt="">
                 </button>
-            </form>
+            </div>
 
 
             <!-- loading screen -->
-            <div class="loading-container">
-                <img src="images/loading.gif"  width="150" height="150" loading="lazy">
-                <p>Loading</p>
+            <div class="loading-container unactive  nobg">
+                <img src="images/loading.gif" class="nobg" width="150" height="150" loading="lazy">
+                <p class="nobg">Loading</p>
             </div>
 
             <!-- user weather ui -->
-            <div class="user-info-container">
+            <div class="user-info-container unactive nobg">
 
                 <!-- City name and flag -->
-                <div class="name">
-                    <p data-cityName></p>
-                    <img data-countryIcon>
+                <div class="name nobg">
+                    <p data-cityName class="nobg"></p>
+                    <img data-countryIcon class="nobg" width="30px" height="30px">
                 </div>
 
                 <!-- weather description -->
-                <p data-weatherDesc></p>
+                <p data-weatherDesc class="nobg" ></p>
 
                 <!-- weather icon -->
-                <img data-weatherIcon>
+                <img data-weatherIcon class="nobg" width="90px" height="90px" style="display:block; border:0; margin: 0%;">
 
                 <!-- temperature -->
-                <p data-temp></p>
-
+                <p data-temp class="nobg" style="margin: 0%; margin-bottom: 5px;"></p>
+            </div>
                 <!-- 3 cards parameters -->
-                <div class="parameter-container">
+            <div class="parameter-container unactive nobg">
                     <!-- Card 1 -->
-                    <div class="parameter">
-                        <img src="images/wind.png" alt="">
-                        <p>Windspeed</p>
-                        <p data-windspeed></p>
+                    <div class="parameter nobg">
+                        <img src="images/wind.png" class="nobg" alt="">
+                        <p data-windspeed class="nobg">Windspeed</p>
+                        <p class="Windspeed nobg"></p>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="parameter">
-                        <img src="images/humidity.png" alt="">
-                        <p>Humidity</p>
-                        <p data-humidity></p>
+                    <div class="parameter nobg">
+                        <img src="images/humidity.png" class="nobg" alt="">
+                        <p data-humidity class="nobg">Humidity</p>
+                        <p class="humidity nobg"></p>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="parameter">
-                        <img src="images/cloud.png" alt="">
-                        <p>Cloudspeed</p>
-                        <p data-cloudspeed></p>
+                    <div class="parameter nobg">
+                        <img src="images/cloud.png" class="nobg" alt="">
+                        <p data-cloudspeed class="nobg">Cloudspeed</p>
+                        <p class="cloudspeed nobg"></p>
                     </div>
-                </div>
+            </div>
+
+            <!-- error wala msg -->
+
+            <div class="error nobg unactive">
+                <img src="images/not-found.png" alt="" width="400px" height="400px" class="nobg">
+                <p class="error_msg nobg"></p>
             </div>
 
         </div>
+
     </div>
+</div>
+
 
     <script src="index.js"></script>
 </body>
