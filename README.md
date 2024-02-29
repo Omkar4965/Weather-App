@@ -1,4 +1,9 @@
 # Weather-App
+
+### Overview of project
+<br><b>
+
+
 ![image](https://github.com/Omkar4965/Weather-App/assets/115718315/435f633c-d620-4610-ac44-9b2edd99010a)
 
 <br><br>
